@@ -11,6 +11,10 @@
 <body>
     <style>
 
+        [type='checkbox']{
+            margin:15px;
+        }
+
         h3{
             color: red;
             font-family: 'Lobster', cursive;
@@ -62,12 +66,14 @@
     <a href="https://github.com/MalarvizhiM29" target="_blank"><img id="profile" src="profile.jpg" alt=""></a>
     <br>
 
-    <h2>Personal Profile</h2>
-    <p class="Objective">Dedicated web developer with a passion for developing and
+    <div class="portfolio">
+        <h2>Personal Profile</h2>
+        <p class="Objective">Dedicated web developer with a passion for developing and
         deploying user-friendly web applications. A full stack web
         development enthusiast. A diligent individual looking for a
         responsible role in a reputable organization.</p>
-    
+    </div>
+
     <div class="achievements">
         <h2 class="head-achieve">Achievements</h2>
 
@@ -80,5 +86,21 @@
         <h3 class="hackathons">Binance Ideathon - 2022 Finalist</h3>
         <p class="content">Our team was one among the Top 50 Teams and Top 5 in our Problem statement theme.</p>
     </div>
+
+    <form class="skills">
+        <h2>Skills</h2>
+        <div>
+            <input type="checkbox" name="html"> HTML
+            <input type="checkbox" name="css"> CSS 
+            <input type="checkbox" name="js"> Javascript
+            <input type="checkbox" name="Nodejs"> NodeJs 
+            <input type="checkbox" name="MongoDB"> MongoDB
+            <input type="checkbox" name="bootstrap"> Bootstrap
+            <input type="checkbox" name="expressjs"> ExpressJS
+            <input type="checkbox" name="git"> Git
+            <input type="checkbox" name="Mysql"> MySQL
+            <input type="checkbox" name="Java"> Java
+        </div>     
+    </form>
 </body>
 </html>
