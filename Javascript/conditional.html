@@ -151,5 +151,73 @@
     console.log(mark1(85))
 
 
+    //Switch Statement
+    function switchf(val){
+        switch(val){
+            case 1:
+                return "Malarvizhi"
+                break;
+
+            case 2:
+                return "Internship"
+                break;
+
+            default:
+                return "Gyanmatrix";
+        }
+    }
+
+    console.log(switchf(5))
+
+
+    //Multiple Identical Options in Switch Statement
+    function switchf1(val){
+        switch(val){
+            case 1:
+            case 2:
+            case 3:
+                return "123";
+                break;
+                case 1:
+            case 4:
+            case 5:
+            case 6:
+                return "456";
+                break;
+                case 1:
+            case 7:
+            case 8:
+            case 9:
+                return "789";
+                break;
+        }
+    }
+
+    console.log(switchf1(5))
+
+
+    //Replacing If Else Chains with Switch
+    function mark2(val) {
+        switch(val){
+            case 1:
+                return "OutStanding"
+                break;
+            case 2:
+                return "Excellent"
+                break;
+            case 3:
+                return "Good"
+                break;
+            case 4:
+                return "OK"
+                break;
+            default:
+                return "Fail"
+        }
+    }
+
+    console.log(mark2(2))
+
+
 
 </script>
