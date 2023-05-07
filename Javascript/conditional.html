@@ -31,4 +31,73 @@
     }
     console.log(test1("10"))
 
+
+    //Practice Comparing Different Values
+
+    function eql(a,b){
+        if(a==b){
+            return "Equal"
+        }
+        return "Not Equal"
+    }
+    console.log(eql(10 , "10"))
+
+
+    //Comparision with the Inequality Operator
+
+    function test2(val){
+        if(val!=10){
+            return "Not Equal"
+        }
+        return "Equal"
+    }
+    console.log(test2("10"))
+
+
+    //Comparision with the Strict Inequality Operator
+
+    function test3(val){
+        if(val !== 10){
+            return "Not Equal"
+        }
+        return "Equal"
+    }
+    console.log(test3("10"))
+
+
+    //Comparison with Logical and Operator
+    function testf(val) {
+        if(val >= 18){
+            return "Major"
+        }
+        if(val < 18){
+            return "Minor"
+        }
+    }
+
+    console.log(testf(10))
+
+
+    //Comparison with Logical and Operator
+    function testg(val) {
+        if(val <= 50 && val >= 25){
+            return "Yes";
+        }
+        return "NO"
+    }
+
+    console.log(testg(10))
+
+
+    //Comparisons with Logical or Operator
+    function testl(val) {
+        if(val <= 50 || val >= 25){
+            return "Yes";
+        }
+        return "NO"
+    }
+
+    console.log(testl(10))
+
+
 </script>
