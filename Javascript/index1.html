@@ -71,4 +71,57 @@
     console.log(func())
     console.log(myvar1)
 
+
+    //Return a value from a Function With Return
+
+    function sum(num){
+        return num + 2
+    }
+    console.log(sum(10))
+
+    
+    //Understanding Undefined Value Returned from a Function
+
+    var sum = 0;
+    function add(){
+        sum +=2;
+    }
+    console.log(sum)
+
+
+    //Assignment with a Returned Value
+
+    var changed = 0;
+
+    function change(num){
+        return (num + 3) / 2;
+    }
+
+    changed = change(10);
+    console.log(changed)
+
+
+    //Stand in Line
+
+    function next(arr , item){
+        arr.push(item)
+        return arr
+    }
+
+    var array = [1,2,3,4,5]
+
+    console.log(JSON.stringify(array))
+    console.log(next(array,6))
+    console.log(JSON.stringify(array))
+
+
+    //Boolean Values
+
+    function func(){
+        return true;
+    }
+    console.log(func())
+
+
+
 </script>
