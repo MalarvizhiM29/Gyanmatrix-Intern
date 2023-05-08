@@ -34,4 +34,77 @@
     delete myskill.rollno
     console.log(myskill)
 
+    //Using Objects for Lookups
+
+    function plookup(val){
+        var res = "";
+
+        var lookup = {
+            "HTML" : "Hyper Text Markup Language",
+            "CSS" : "Cascading Style Sheet",
+            "JS" : "JavaScript"
+        }
+
+        res = lookup[val];
+        return res;
+    }
+
+    console.log(plookup("JS"))
+
+    //Testing Objects for Properties
+
+    var myObj = {
+        red: "Apple",
+        yellow: "Banana",
+        green: "Mango"
+    }
+
+    function checkobj(checkprop){
+
+        if(myObj.hasOwnProperty(checkprop)){
+            return myObj[checkprop]
+        }else {
+            return "Not Found"
+        }
+    }
+
+    console.log(checkobj("red"))
+
+
+    // Manipulating complex objects
+
+    var malar = [
+        {
+            "name": "Malarvizhi",
+            "dob": 2004,
+            "age": 19,
+            "skills":[
+                "HTML",
+                "CSS",
+                "JS"
+            ],
+            "college": "sece"
+        }
+    ]
+
+    //Accessing Nested Object
+
+    var mystorage = {
+        "car": {
+            "inside": {
+                "glove box": "maps",
+                "passenger seat": "crumbs"
+            },
+            "outside":{
+                "trunk": "jack"
+            }
+        }
+    }
+
+    var gloveboxc = mystorage.car.inside["glove box"];
+
+    console.log(gloveboxc)
+
+    
+
 </script>
